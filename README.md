@@ -12,3 +12,15 @@ You can see this article via this link :- https://towardsdatascience.com/read-te
 In the medium link i changed some code and getting this output well defined.
 
 If you will use my code from my this github repo you will not get any error.
+
+if you will use the link code directly then you will get error like this in your ubuntu system,
+```
+Traceback (most recent call last):
+  File "Read-image.py", line 10, in <module>
+    text = image_to_string(img)
+NameError: name 'image_to_string' is not defined
+```
+In the article you will seen there is code for windows but i did it for linux/ubuntu, So i just change the code like this.
+
+1) First i "import image_to_string" from pytesseract.
+2) Remove "pytesseract." from this line "text = pytesseract.image_to_string(img)".
