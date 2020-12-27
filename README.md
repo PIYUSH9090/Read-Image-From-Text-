@@ -20,6 +20,7 @@ Traceback (most recent call last):
     text = image_to_string(img)
 NameError: name 'image_to_string' is not defined
 ```
+solved this error from this link:- https://stackoverflow.com/questions/14640509/python-error-when-importing-image-to-string-from-tesseract/24291551
 In the article you will seen there is code for windows but i did it for linux/ubuntu, So i just change the code like this.
 
 1) First i "import image_to_string" from pytesseract.
